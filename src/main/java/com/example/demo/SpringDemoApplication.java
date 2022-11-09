@@ -17,6 +17,7 @@ public static void main(String[] args) {
 	SpringApplication.run(SpringDemoApplication.class, args);
 }
 
+//@GetMapping : 컨트롤러 클래스가 클라이언트의 요청을 처리 할 URL을 매핑한다. 현재 서버의 루트로 오는 요청을 처리할 수 있도록 value="/"로 선언.
 @GetMapping(value = "/")
 	public String HelloWorld(){
 	return "Hello World";
